@@ -99,8 +99,9 @@ class HistoryDetailActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.tvValTTFT).text = "%.2f s".format(ttftSec)
             findViewById<TextView>(R.id.tvValOET).text = "%.2f s".format(oetSec)
 
-            findViewById<TextView>(R.id.tvValITPS).text = "%.1f".format(metrics.itps)
-            findViewById<TextView>(R.id.tvValOTPS).text = "%.1f".format(metrics.otps)
+// Add .toDouble()
+            findViewById<TextView>(R.id.tvValITPS).text = "%.1f".format(metrics.itps.toDouble())
+            findViewById<TextView>(R.id.tvValOTPS).text = "%.1f".format(metrics.otps.toDouble())
 
             findViewById<TextView>(R.id.tvValJava).text = "%.2f MB".format(javaMb)
             findViewById<TextView>(R.id.tvValNative).text = "%.2f MB".format(nativeMb)

@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="48dp"
-                android:text="Food Analysis Details"
+                android:text=" Food Analysis Details History"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
@@ -118,6 +118,7 @@
                             android:textSize="14sp"/>
                     <TextView
                             android:id="@+id/tvDetailLink"
+                            android:autoLink="web"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="..."

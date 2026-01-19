@@ -93,13 +93,25 @@ class HistoryActivity : AppCompatActivity() {
             recyclerView.visibility = View.VISIBLE
             tvEmpty.visibility = View.GONE
 
-            // --- NEW: Initialize Adapter with Click Listener ---
+            // --- REPLACE THE OLD ADAPTER CODE WITH THIS BLOCK ---
             val adapter = HistoryAdapter(filteredList) { selectedResult ->
-                // Open the Detail Activity
-                val intent = Intent(this, HistoryDetailActivity::class.java)
-                intent.putExtra("EXTRA_RESULT", selectedResult)
-                startActivity(intent)
+                try {
+                    // Log that we are attempting to open the activity
+                    android.util.Log.d("DEBUG_CRASH", "Attempting to open details for: ${selectedResult.foodItem.name}")
+
+                    val intent = Intent(this, HistoryDetailActivity::class.java)
+                    intent.putExtra("EXTRA_RESULT", selectedResult)
+                    startActivity(intent)
+
+                } catch (e: Exception) {
+                    // This will print the EXACT error to Logcat even if the app crashes
+                    android.util.Log.e("DEBUG_CRASH", "CRASH CAUGHT: ${e.message}", e)
+                    e.printStackTrace()
+                    android.widget.Toast.makeText(this, "Error: ${e.message}", android.widget.Toast.LENGTH_LONG).show()
+                }
             }
+            // ---------------------------------------------------
+
             recyclerView.adapter = adapter
 
         } else {
