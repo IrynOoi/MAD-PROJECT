@@ -176,6 +176,16 @@ PART 3:
 <img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/cae2bae2-fd9c-4f33-8f0d-5971aed83795" />
 
 
+# Llama-3.2-3B-Instruct-Q4_K_M.gguf
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/fa730c5e-7f03-4ae1-8b11-cb51cee025c3" />
+
+# Llama-3.2-1B-Instruct-Q4_K_M.gguf
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/c4dc2db5-e878-48d2-a838-c59046e85efa" />
+
+
+
 ## FOOD ANALYSIS DETAILS HISTORY
 
 PART 1:
