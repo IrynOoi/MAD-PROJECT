@@ -166,7 +166,7 @@ PART 3:
 
 <img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/ac958bca-a158-4395-acdb-902d859c12cf" />
 
-# CAN CLICK CERTAIN MODEL  TO DISPLAY RELATED PREDICTED HISTORY:
+# CAN CLICK CERTAIN MODEL FROM DROP DOWN MENU  TO DISPLAY RELATED PREDICTED HISTORY:
 # qwen2.5-1.5b-instruct-q4_k_m.gguf
 
 <img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/ec7cf986-39af-43d6-94d5-b130b4b7da2b" />
@@ -174,6 +174,24 @@ PART 3:
 # qwen2.5-3b-instruct-q4_k_m.gguf 
 
 <img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/cae2bae2-fd9c-4f33-8f0d-5971aed83795" />
+
+
+## FOOD ANALYSIS DETAILS HISTORY
+
+PART 1:
+
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/b5b761ef-0794-4111-ad1c-67f914fceb49" />
+
+
+PART 2:
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/9e5d5a40-f10f-4ba5-a7e2-3a82aa66f79c" />
+
+
+
+
+
 
 
 
