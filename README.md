@@ -141,6 +141,25 @@ PART 4 :
 <img width="887" height="671" alt="image" src="https://github.com/user-attachments/assets/6aade6d4-7831-4613-bdf7-c2ac841886d5" />
 
 
+## PREDICT HISTORY INTERFACE
+
+# ALL MODELS
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/ac958bca-a158-4395-acdb-902d859c12cf" />
+
+# qwen2.5-1.5b-instruct-q4_k_m.gguf
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/ec7cf986-39af-43d6-94d5-b130b4b7da2b" />
+
+# qwen2.5-3b-instruct-q4_k_m.gguf 
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/cae2bae2-fd9c-4f33-8f0d-5971aed83795" />
+
+
+
+
+
+
 
 
 
