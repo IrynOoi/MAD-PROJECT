@@ -184,6 +184,22 @@ PART 3:
 
 <img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/c4dc2db5-e878-48d2-a838-c59046e85efa" />
 
+# Phi-3.5-mini-instruct-Q4_K_M.gguf
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/4e3c49f4-7feb-4e92-85e1-ff31cfb97ccb" />
+
+# Phi-3-mini-4k-instruct-q4.gguf
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/ecd19a92-37f5-42ad-9bef-d33dbfb4fcf9" />
+
+# Vikhr-Gemma-2B-instruct-Q4_K_M.gguf
+
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/9115e233-2d52-486b-8603-717cc5e5b20e" />
+
+
+
+
+
 
 
 ## FOOD ANALYSIS DETAILS HISTORY
