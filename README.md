@@ -138,7 +138,7 @@ PART 4 :
 
 ## EXPORT IN CSV
 
-<img width="887" height="671" alt="image" src="https://github.com/user-attachments/assets/6aade6d4-7831-4613-bdf7-c2ac841886d5" />
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/faafa166-2ea3-43f4-a957-f774ba45b55f" />
 
 
 ## PREDICT HISTORY INTERFACE
