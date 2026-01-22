@@ -16,7 +16,6 @@ class HistoryAdapter(
 ) : RecyclerView.Adapter<HistoryAdapter.HistoryViewHolder>() {
 
     class HistoryViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        // IDs must match your item layout (e.g., item_history.xml)
         val tvFoodName: TextView = view.findViewById(R.id.tvHistoryFoodName)
         val tvModelName: TextView = view.findViewById(R.id.tvHistoryModelName)
         val tvPredicted: TextView = view.findViewById(R.id.tvHistoryPredicted)
@@ -33,20 +32,19 @@ class HistoryAdapter(
     override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) {
         val item = historyList[position]
 
+        // 1️ Food Name
         holder.tvFoodName.text = item.foodItem.name
 
-        // Clean model name
-        val cleanName = item.modelName
-            .replace(".gguf", "")
-            .replace("-instruct-Q4_K_M", "")
-            .replace("-instruct-q4_k_m", "")
+        // 2️ Full Model Name
+        holder.tvModelName.text = "Model: ${item.modelName}"
 
-        holder.tvModelName.text = "Model: $cleanName"
+        // 3️ Predicted Allergens
         holder.tvPredicted.text = "Predicted: ${item.predictedAllergens}"
 
+        // 4⃣ Timestamp (format: dd MMM HH:mm)
         val sdf = SimpleDateFormat("dd MMM HH:mm", Locale.getDefault())
         holder.tvDate.text = sdf.format(Date(item.timestamp))
-
+        // 5⃣ Latency (if available)
         if (item.metrics != null) {
             holder.tvLatency.text = "${item.metrics.latencyMs} ms"
             holder.tvLatency.visibility = View.VISIBLE
@@ -54,7 +52,7 @@ class HistoryAdapter(
             holder.tvLatency.visibility = View.GONE
         }
 
-        // Handle Click -> Passes item to Activity
+        // 6⃣ Click listener to open detail
         holder.itemView.setOnClickListener {
             onItemClick(item)
         }

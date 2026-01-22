@@ -4,12 +4,7 @@ package edu.utem.ftmk.slm02
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.ImageButton
-import android.widget.ProgressBar
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -56,29 +51,41 @@ class HistoryActivity : AppCompatActivity() {
     }
 
     private fun setupModelFilter() {
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, modelsList)
+        val adapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_spinner_item,
+            modelsList
+        )
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinnerFilterModel.adapter = adapter
 
-        spinnerFilterModel.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                val selectedModel = modelsList[position]
-                filterAndDisplayHistory(selectedModel)
+        spinnerFilterModel.adapter = adapter
+        spinnerFilterModel.setSelection(0)
+
+        spinnerFilterModel.onItemSelectedListener =
+            object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(
+                    parent: AdapterView<*>,
+                    view: View?,
+                    position: Int,
+                    id: Long
+                ) {
+                    filterAndDisplayHistory(modelsList[position])
+                }
+
+                override fun onNothingSelected(parent: AdapterView<*>) {}
             }
-            override fun onNothingSelected(parent: AdapterView<*>?) {}
-        }
     }
 
     private fun loadHistory() {
         lifecycleScope.launch {
             progressBar.visibility = View.VISIBLE
             recyclerView.visibility = View.GONE
+            tvEmpty.visibility = View.GONE
 
             allHistoryList = firebaseService.getPredictionHistory()
 
             progressBar.visibility = View.GONE
-            val currentSelection = modelsList[spinnerFilterModel.selectedItemPosition]
-            filterAndDisplayHistory(currentSelection)
+            filterAndDisplayHistory(modelsList[spinnerFilterModel.selectedItemPosition])
         }
     }
 
@@ -93,27 +100,11 @@ class HistoryActivity : AppCompatActivity() {
             recyclerView.visibility = View.VISIBLE
             tvEmpty.visibility = View.GONE
 
-            // --- REPLACE THE OLD ADAPTER CODE WITH THIS BLOCK ---
-            val adapter = HistoryAdapter(filteredList) { selectedResult ->
-                try {
-                    // Log that we are attempting to open the activity
-                    android.util.Log.d("DEBUG_CRASH", "Attempting to open details for: ${selectedResult.foodItem.name}")
-
-                    val intent = Intent(this, HistoryDetailActivity::class.java)
-                    intent.putExtra("EXTRA_RESULT", selectedResult)
-                    startActivity(intent)
-
-                } catch (e: Exception) {
-                    // This will print the EXACT error to Logcat even if the app crashes
-                    android.util.Log.e("DEBUG_CRASH", "CRASH CAUGHT: ${e.message}", e)
-                    e.printStackTrace()
-                    android.widget.Toast.makeText(this, "Error: ${e.message}", android.widget.Toast.LENGTH_LONG).show()
-                }
+            recyclerView.adapter = HistoryAdapter(filteredList) { selectedResult ->
+                val intent = Intent(this, HistoryDetailActivity::class.java)
+                intent.putExtra("EXTRA_RESULT", selectedResult)
+                startActivity(intent)
             }
-            // ---------------------------------------------------
-
-            recyclerView.adapter = adapter
-
         } else {
             recyclerView.visibility = View.GONE
             tvEmpty.visibility = View.VISIBLE
