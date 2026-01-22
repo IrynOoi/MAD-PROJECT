@@ -10,7 +10,8 @@
 
 ## UI PREDICTOR LOOK LIKE:
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/027d6dd1-c648-46b5-908f-85e58817b40f" />
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/c79dbec1-2d3e-42c2-84ad-f9254aa94b70" />
+
 
 
 ## Summary of food product (predict one item)
