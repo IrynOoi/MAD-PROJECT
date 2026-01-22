@@ -130,9 +130,10 @@ PART 4 :
 <img width="572" height="728" alt="image" src="https://github.com/user-attachments/assets/598fb852-8c41-4aee-89d0-6a1e4bbfcd69" />
 
 
-## EXPORT IN EXCEL IN HTML CSS WAY
+## EXPORT IN CSV
 
-<img width="1017" height="608" alt="image" src="https://github.com/user-attachments/assets/18eb5dcb-ba05-4627-9ffb-2b98353e0912" />
+<img width="887" height="671" alt="image" src="https://github.com/user-attachments/assets/6aade6d4-7831-4613-bdf7-c2ac841886d5" />
+
 
 
 
