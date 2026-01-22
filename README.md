@@ -80,7 +80,8 @@ PART 1:
 
 PART 2:
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/6a8dc8e0-0f43-4337-99c2-e80a9480d17f" />
+<img width="449" height="602" alt="image" src="https://github.com/user-attachments/assets/cdc5f210-2da2-4e06-b782-162fdfde1945" />
+
 
 
 
@@ -91,14 +92,16 @@ PART 2:
 
 PART 1:
 
-<img width="572" height="812" alt="image" src="https://github.com/user-attachments/assets/42b3ecf1-59a0-49c8-a833-129efbef7409" />
+<img width="444" height="590" alt="image" src="https://github.com/user-attachments/assets/1cdbe4f4-874b-4c30-aeac-27cc92ac420e" />
+
+
 
 
 
 
 PART 2:
+<img width="453" height="582" alt="image" src="https://github.com/user-attachments/assets/dc2600f0-8ff3-47c2-855c-c8ff0ff82cca" />
 
-<img width="572" height="815" alt="image" src="https://github.com/user-attachments/assets/8909f70a-9186-4722-9ea7-0a2dd7765041" />
 
 
 
@@ -124,12 +127,10 @@ PART 2:
 
 PART 3:
 
-<img width="567" height="697" alt="image" src="https://github.com/user-attachments/assets/fe450835-f343-4957-8a24-b653476e454d" />
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/971e7abd-6641-4489-a04c-b06832c08e56" />
 
 
-PART 4 :
 
-<img width="572" height="728" alt="image" src="https://github.com/user-attachments/assets/598fb852-8c41-4aee-89d0-6a1e4bbfcd69" />
 
 
 ## AFTER CLICK THE TOP RIGHT BUTTON AT PERFORMANCE PAGE 
