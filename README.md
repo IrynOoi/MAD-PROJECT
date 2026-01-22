@@ -20,7 +20,7 @@
 
 
 
-## Summary of food product (predict all)
+## Summary of food product (predict all OR  predict 200 items)
 
 PART 1:
 
