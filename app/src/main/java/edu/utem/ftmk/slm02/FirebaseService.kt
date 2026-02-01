@@ -296,22 +296,18 @@ class FirebaseService {
     }
 
     // =========================================================================
-    // PART 4: History Retrieval
+    // PART 4: History Retrieval (FIXED)
     // =========================================================================
-
 
     suspend fun getPredictionHistory(): List<PredictionResult> {
         return try {
-            // Fetch last 100 predictions, ordered by newest first
             val snapshot = collectionPrediction
                 .orderBy("timestamp", Query.Direction.DESCENDING)
-                .limit(100)
                 .get()
                 .await()
 
             snapshot.documents.mapNotNull { doc ->
                 try {
-                    // Reconstruct FoodItem
                     val foodItem = FoodItem(
                         id = doc.get("dataId")?.toString() ?: "0",
                         name = doc.getString("name") ?: "Unknown",
@@ -321,12 +317,36 @@ class FirebaseService {
                         allergensMapped = doc.getString("mappedAllergens") ?: ""
                     )
 
-                    // Reconstruct Metrics (Partial)
+                    // 1. FIX TIMESTAMP: Read the actual time from Firebase
+                    val timestampObj = doc.getTimestamp("timestamp")
+                    val timeInMillis = timestampObj?.toDate()?.time ?: System.currentTimeMillis()
+
+                    // 2. FIX METRICS: Read the values instead of using 0
                     val effMap = doc.get("efficiency_metrics") as? Map<String, Any>
                     val metrics = if (effMap != null) {
+
+                        // Read values (Stored as Seconds and MB in Firebase)
+                        val latS  = (effMap["Latency (s)"] as? Number)?.toDouble() ?: 0.0
+                        val ttftS = (effMap["Time-to-First-Token (s)"] as? Number)?.toDouble() ?: 0.0
+                        val oetS  = (effMap["Output Eval Time (s)"] as? Number)?.toDouble() ?: 0.0
+
+                        val itps  = (effMap["Input Token Per Second (tokens/s)"] as? Number)?.toLong() ?: 0L
+                        val otps  = (effMap["Output Token Per Second (tokens/s)"] as? Number)?.toLong() ?: 0L
+
+                        val javaMb = (effMap["Java Heap (MB)"] as? Number)?.toDouble() ?: 0.0
+                        val natMb  = (effMap["Native Heap (MB)"] as? Number)?.toDouble() ?: 0.0
+                        val pssMb  = (effMap["Proportional Set Size (MB)"] as? Number)?.toDouble() ?: 0.0
+
                         InferenceMetrics(
-                            latencyMs = ((effMap["Latency (s)"] as? Number)?.toDouble() ?: 0.0 * 1000).toLong(),
-                            javaHeapKb = 0, nativeHeapKb = 0, totalPssKb = 0, ttft = 0, itps = 0, otps = 0, oet = 0
+                            // Convert back to original units (ms and KB) for the App/CSV
+                            latencyMs = (latS * 1000).toLong(),
+                            javaHeapKb = (javaMb * 1024).toLong(),
+                            nativeHeapKb = (natMb * 1024).toLong(),
+                            totalPssKb = (pssMb * 1024).toLong(),
+                            ttft = (ttftS * 1000).toLong(),
+                            itps = itps,
+                            otps = otps,
+                            oet = (oetS * 1000).toLong()
                         )
                     } else null
 
@@ -334,11 +354,13 @@ class FirebaseService {
                         foodItem = foodItem,
                         predictedAllergens = doc.getString("predictedAllergens") ?: "",
                         modelName = doc.getString("modelName") ?: "Unknown",
+                        timestamp = timeInMillis, // <--- Apply the fixed timestamp
                         metrics = metrics,
                         firestoreId = doc.id
                     )
                 } catch (e: Exception) {
-                    null // Skip malformed documents
+                    Log.e("FIREBASE_HISTORY", "Error parsing item ${doc.id}", e)
+                    null
                 }
             }
         } catch (e: Exception) {

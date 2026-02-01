@@ -147,11 +147,12 @@ class DashboardActivity : AppCompatActivity() {
         // 5. SAVE AND SHARE
         // ==========================================
         try {
-            val fileName = "benchmark_report.csv" // Using .csv extension
+            val timeStamp = java.text.SimpleDateFormat("yyyyMMdd_HHmmss", java.util.Locale.getDefault()).format(java.util.Date())
+            val fileName = "benchmark_report_$timeStamp.csv"
             val file = File(cacheDir, fileName)
             file.writeText(sb.toString())
 
-            val uri = FileProvider.getUriForFile(this, "${packageName}.provider", file)
+            val uri = FileProvider.getUriForFile(this, "${packageName}.fileprovider", file)
             val intent = Intent(Intent.ACTION_SEND)
 
             // MIME type for CSV

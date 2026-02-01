@@ -1,4 +1,4 @@
-//HistoryAdapter.kt
+// HistoryAdapter.kt
 package edu.utem.ftmk.slm02
 
 import android.view.LayoutInflater
@@ -32,19 +32,20 @@ class HistoryAdapter(
     override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) {
         val item = historyList[position]
 
-        // 1️ Food Name
+        // 1️⃣ Food Name
         holder.tvFoodName.text = item.foodItem.name
 
-        // 2️ Full Model Name
+        // 2️⃣ Model Name
         holder.tvModelName.text = "Model: ${item.modelName}"
 
-        // 3️ Predicted Allergens
+        // 3️⃣ Predicted Allergens
         holder.tvPredicted.text = "Predicted: ${item.predictedAllergens}"
 
-        // 4⃣ Timestamp (format: dd MMM HH:mm)
+        // 4️⃣ Timestamp (dd MMM HH:mm)
         val sdf = SimpleDateFormat("dd MMM HH:mm", Locale.getDefault())
         holder.tvDate.text = sdf.format(Date(item.timestamp))
-        // 5⃣ Latency (if available)
+
+        // 5️⃣ Latency (if available)
         if (item.metrics != null) {
             holder.tvLatency.text = "${item.metrics.latencyMs} ms"
             holder.tvLatency.visibility = View.VISIBLE
@@ -52,11 +53,16 @@ class HistoryAdapter(
             holder.tvLatency.visibility = View.GONE
         }
 
-        // 6⃣ Click listener to open detail
+        // 6️⃣ Click listener
         holder.itemView.setOnClickListener {
             onItemClick(item)
         }
     }
 
-    override fun getItemCount() = historyList.size
+    // ✅ ADD THIS METHOD FOR CSV EXPORT
+    fun getAllItems(): List<PredictionResult> {
+        return historyList
+    }
+
+    override fun getItemCount(): Int = historyList.size
 }

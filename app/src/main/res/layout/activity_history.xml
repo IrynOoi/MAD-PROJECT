@@ -6,7 +6,6 @@
         android:layout_height="match_parent"
         android:background="#F2F2F2">
 
-    <!-- ================= APP BAR ================= -->
     <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/customAppBar"
             android:layout_width="0dp"
@@ -17,7 +16,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Back Button -->
         <ImageButton
                 android:id="@+id/btnBackHistory"
                 android:layout_width="48dp"
@@ -31,6 +29,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
+
         <TextView
                 android:id="@+id/tvHistoryTitle"
                 android:layout_width="0dp"
@@ -41,12 +40,25 @@
                 android:textStyle="bold"
                 android:textAlignment="center"
                 app:layout_constraintStart_toEndOf="@id/btnBackHistory"
+                app:layout_constraintEnd_toStartOf="@+id/btnExportCsv"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageButton
+                android:id="@+id/btnExportCsv"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_share"
+                app:tint="@android:color/white"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Export CSV"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- ================= CONTENT ================= -->
     <LinearLayout
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -57,7 +69,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Filter Label -->
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,7 +77,6 @@
                 android:textColor="#666666"
                 android:layout_marginBottom="8dp"/>
 
-        <!-- ✅ NORMAL SPINNER (SAME AS OTHER SCREEN) -->
         <Spinner
                 android:id="@+id/spinnerFilterModel"
                 android:layout_width="match_parent"
@@ -74,7 +84,6 @@
                 android:minHeight="48dp"
                 android:layout_marginBottom="16dp"/>
 
-        <!-- ================= LIST AREA ================= -->
         <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"

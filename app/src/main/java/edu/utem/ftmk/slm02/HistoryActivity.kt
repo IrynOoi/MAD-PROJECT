@@ -1,4 +1,4 @@
-//HistoryActivity.kt
+// HistoryActivity.kt
 package edu.utem.ftmk.slm02
 
 import android.content.Intent
@@ -18,6 +18,9 @@ class HistoryActivity : AppCompatActivity() {
     private lateinit var tvEmpty: TextView
     private lateinit var spinnerFilterModel: Spinner
     private lateinit var btnBack: ImageButton
+    private lateinit var btnExportCsv: ImageButton // ImageButton in App Bar
+
+    private var historyAdapter: HistoryAdapter? = null
 
     private val firebaseService = FirebaseService()
     private var allHistoryList: List<PredictionResult> = emptyList()
@@ -42,38 +45,61 @@ class HistoryActivity : AppCompatActivity() {
         tvEmpty = findViewById(R.id.tvEmptyHistory)
         spinnerFilterModel = findViewById(R.id.spinnerFilterModel)
         btnBack = findViewById(R.id.btnBackHistory)
+        btnExportCsv = findViewById(R.id.btnExportCsv)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         btnBack.setOnClickListener { finish() }
 
         setupModelFilter()
         loadHistory()
+
+        // Export and Share CSV
+        btnExportCsv.setOnClickListener {
+            val predictions = historyAdapter?.getAllItems() ?: emptyList()
+
+            if (predictions.isEmpty()) {
+                Toast.makeText(this, "No data to export", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            // 1. Get Selected Model Name for Filename
+            val selectedModelName = spinnerFilterModel.selectedItem.toString()
+
+            // 2. Export CSV to cache (Pass the name)
+            val csvFile = CsvExporter.exportPredictionsToCache(
+                context = this,
+                predictions = predictions,
+                modelNameHeader = selectedModelName // <--- PASSING THE NAME
+            )
+
+            // 3. Get shareable URI
+            val uri = CsvExporter.getShareableUri(this, csvFile)
+
+            // 4. Share Intent
+            val shareIntent = Intent(Intent.ACTION_SEND).apply {
+                type = "text/csv"
+                putExtra(Intent.EXTRA_STREAM, uri)
+                addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+            }
+
+            startActivity(Intent.createChooser(shareIntent, "Share CSV file"))
+        }
     }
 
     private fun setupModelFilter() {
-        val adapter = ArrayAdapter(
-            this,
-            android.R.layout.simple_spinner_item,
-            modelsList
-        )
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, modelsList)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         spinnerFilterModel.adapter = adapter
         spinnerFilterModel.setSelection(0)
 
-        spinnerFilterModel.onItemSelectedListener =
-            object : AdapterView.OnItemSelectedListener {
-                override fun onItemSelected(
-                    parent: AdapterView<*>,
-                    view: View?,
-                    position: Int,
-                    id: Long
-                ) {
-                    filterAndDisplayHistory(modelsList[position])
-                }
-
-                override fun onNothingSelected(parent: AdapterView<*>) {}
+        spinnerFilterModel.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
+                filterAndDisplayHistory(modelsList[position])
             }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {}
+        }
     }
 
     private fun loadHistory() {
@@ -90,25 +116,24 @@ class HistoryActivity : AppCompatActivity() {
     }
 
     private fun filterAndDisplayHistory(modelName: String) {
-        val filteredList = if (modelName == "All Models") {
-            allHistoryList
-        } else {
-            allHistoryList.filter { it.modelName == modelName }
-        }
+        val filteredList = if (modelName == "All Models") allHistoryList else allHistoryList.filter { it.modelName == modelName }
 
         if (filteredList.isNotEmpty()) {
             recyclerView.visibility = View.VISIBLE
             tvEmpty.visibility = View.GONE
 
-            recyclerView.adapter = HistoryAdapter(filteredList) { selectedResult ->
+            historyAdapter = HistoryAdapter(filteredList) { selectedResult ->
                 val intent = Intent(this, HistoryDetailActivity::class.java)
                 intent.putExtra("EXTRA_RESULT", selectedResult)
                 startActivity(intent)
             }
+
+            recyclerView.adapter = historyAdapter
         } else {
             recyclerView.visibility = View.GONE
             tvEmpty.visibility = View.VISIBLE
             tvEmpty.text = "No history found for $modelName"
+            historyAdapter = null
         }
     }
 }
