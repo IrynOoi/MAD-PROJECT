@@ -162,11 +162,23 @@ PART 3:
 
 <img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/01bb7a1a-6f35-4270-b79f-8b18fc6ae57c" />
 
+## AFTER CLICK THE TOP RIGHT BUTTON AT PERFORMANCE PAGE
+
+## EXPORT IN CSV
+
+<img width="1280" height="536" alt="image" src="https://github.com/user-attachments/assets/5f67f660-c585-4b2b-b2b8-ea0d946ea6fc" />
 
 
-## THE CONTENT INSIDE CSV
+
+## THE CONTENT INSIDE CSV FOR PERFORMANCE DASHBOARD
 
 <img width="1089" height="684" alt="image" src="https://github.com/user-attachments/assets/5e00b98e-1417-40c9-9924-28be86639d76" />
+
+
+## THE CONTENT INSIDE CSV FOR PREDICTION HISTORY
+
+<img width="1280" height="536" alt="image" src="https://github.com/user-attachments/assets/82cfdef1-de2f-4ec2-b8e5-c1a66cf0edfb" />
+
 
 
 
@@ -176,39 +188,7 @@ PART 3:
 
 # ALL MODELS
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/ac958bca-a158-4395-acdb-902d859c12cf" />
-
-# CAN CLICK CERTAIN MODEL FROM DROP DOWN MENU  TO DISPLAY RELATED PREDICTED HISTORY:
-# qwen2.5-1.5b-instruct-q4_k_m.gguf
-
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/ec7cf986-39af-43d6-94d5-b130b4b7da2b" />
-
-# qwen2.5-3b-instruct-q4_k_m.gguf 
-
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/cae2bae2-fd9c-4f33-8f0d-5971aed83795" />
-
-
-# Llama-3.2-3B-Instruct-Q4_K_M.gguf
-
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/fa730c5e-7f03-4ae1-8b11-cb51cee025c3" />
-
-# Llama-3.2-1B-Instruct-Q4_K_M.gguf
-
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/c4dc2db5-e878-48d2-a838-c59046e85efa" />
-
-# Phi-3.5-mini-instruct-Q4_K_M.gguf
-
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/4e3c49f4-7feb-4e92-85e1-ff31cfb97ccb" />
-
-# Phi-3-mini-4k-instruct-q4.gguf
-
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/ecd19a92-37f5-42ad-9bef-d33dbfb4fcf9" />
-
-# Vikhr-Gemma-2B-instruct-Q4_K_M.gguf
-
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/9115e233-2d52-486b-8603-717cc5e5b20e" />
-
-
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/133cedbc-799a-4c92-9039-aec261109655" />
 
 
 
