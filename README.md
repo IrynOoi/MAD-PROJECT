@@ -176,12 +176,6 @@ PART 3:
 <img width="1089" height="684" alt="image" src="https://github.com/user-attachments/assets/5e00b98e-1417-40c9-9924-28be86639d76" />
 
 
-## THE CONTENT INSIDE CSV FOR PREDICTION HISTORY
-
-<img width="1280" height="536" alt="image" src="https://github.com/user-attachments/assets/82cfdef1-de2f-4ec2-b8e5-c1a66cf0edfb" />
-
-
-
 
 
 
