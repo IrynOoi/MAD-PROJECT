@@ -162,11 +162,12 @@ PART 3:
 
 <img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/01bb7a1a-6f35-4270-b79f-8b18fc6ae57c" />
 
-## AFTER CLICK THE TOP RIGHT BUTTON AT PERFORMANCE PAGE
+## AFTER CLICK THE TOP RIGHT BUTTON AT PREDICTION HISTORY PAGE
 
 ## EXPORT IN CSV
 
-<img width="1280" height="536" alt="image" src="https://github.com/user-attachments/assets/5f67f660-c585-4b2b-b2b8-ea0d946ea6fc" />
+<img width="1885" height="821" alt="image" src="https://github.com/user-attachments/assets/e7957096-ebd7-41e0-86ff-9771c81700f4" />
+
 
 
 
