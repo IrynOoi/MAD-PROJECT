@@ -20,7 +20,7 @@
 
 
 
-## Summary of food product (predict all OR  predict 200 items)
+## Summary of food product (predict all OR  predict 200 items)-  they have same interface
 
 PART 1:
 
@@ -74,7 +74,8 @@ PART 2:
 
 PART 1:
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/13d096b5-da9c-4c33-b62e-f6a4d059a086" />
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/821a6bf9-daf5-411a-afa3-2d4c98da383d" />
+
 
 
 
@@ -82,7 +83,9 @@ PART 2:
 
 
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/bf72bced-48d5-4d1b-a5f6-d61a2ebb2f5e" />
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/32372ecb-3223-456f-b5f0-03c0a175b606" />
+
+
 
 
 
@@ -97,7 +100,8 @@ PART 1:
 
 
 
-<img width="459" height="630" alt="image" src="https://github.com/user-attachments/assets/860867a9-3a10-4a49-a3d5-db6afc16e2e6" />
+<img width="572" height="720" alt="image" src="https://github.com/user-attachments/assets/f7a5e427-0768-49ff-a770-0afeb7fbc1d1" />
+
 
 
 
@@ -107,7 +111,7 @@ PART 1:
 
 PART 2:
 
-<img width="450" height="611" alt="image" src="https://github.com/user-attachments/assets/88236efe-0170-43c7-9201-181019522c70" />
+<img width="572" height="712" alt="image" src="https://github.com/user-attachments/assets/6549818c-6861-492b-a9b0-d13d6ec879ac" />
 
 
 
@@ -124,7 +128,8 @@ PART 1:
 
 
 
-<img width="425" height="601" alt="image" src="https://github.com/user-attachments/assets/400e647d-3a26-49dd-9d49-df25ba9b81e4" />
+<img width="720" height="860" alt="image" src="https://github.com/user-attachments/assets/74e961b1-e29f-4e5b-bd90-074c0cc4304b" />
+
 
 
 
@@ -132,7 +137,8 @@ PART 1:
 
 PART 2:
 
-<img width="416" height="583" alt="image" src="https://github.com/user-attachments/assets/52529a94-8221-4daf-9e73-bf60690ed5b2" />
+<img width="572" height="777" alt="image" src="https://github.com/user-attachments/assets/2aba2cd8-bdc2-4a07-b8b6-37646048605a" />
+
 
 
 
@@ -142,7 +148,8 @@ PART 2:
 PART 3:
 
 
-<img width="445" height="576" alt="image" src="https://github.com/user-attachments/assets/960f45a8-9a9e-4b85-bbe3-2a93c0b5ecd4" />
+<img width="720" height="1071" alt="image" src="https://github.com/user-attachments/assets/e1c33679-d2e9-4fa0-998a-7937d8fb10de" />
+
 
 
 
@@ -150,14 +157,19 @@ PART 3:
 
 
 ## AFTER CLICK THE TOP RIGHT BUTTON AT PERFORMANCE PAGE 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/6f296592-5605-47e3-954e-3c74d3873ef5" />
-
-
-
 
 ## EXPORT IN CSV
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/faafa166-2ea3-43f4-a957-f774ba45b55f" />
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/01bb7a1a-6f35-4270-b79f-8b18fc6ae57c" />
+
+
+
+## THE CONTENT INSIDE CSV
+
+<img width="1089" height="684" alt="image" src="https://github.com/user-attachments/assets/5e00b98e-1417-40c9-9924-28be86639d76" />
+
+
+
 
 
 ## PREDICT HISTORY INTERFACE
@@ -202,7 +214,7 @@ PART 3:
 
 
 
-## FOOD ANALYSIS DETAILS HISTORY
+## FOOD ANALYSIS DETAILS HISTORY(AFTER CLICKED THE CARDVIEW OF PREDICTED HISTORY INTERFACE)
 
 PART 1:
 
