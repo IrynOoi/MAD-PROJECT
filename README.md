@@ -166,7 +166,8 @@ PART 3:
 
 ## EXPORT IN CSV
 
-<img width="1885" height="821" alt="image" src="https://github.com/user-attachments/assets/e7957096-ebd7-41e0-86ff-9771c81700f4" />
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/96cedaf9-8999-484d-b69f-8f9b1bca1b26" />
+
 
 
 
@@ -174,6 +175,12 @@ PART 3:
 ## THE CONTENT INSIDE CSV FOR PERFORMANCE DASHBOARD
 
 <img width="1089" height="684" alt="image" src="https://github.com/user-attachments/assets/5e00b98e-1417-40c9-9924-28be86639d76" />
+
+
+## THE CONTENT INSIDE CSV FOR PREDICT HISTORY PAGE
+
+<img width="1865" height="728" alt="image" src="https://github.com/user-attachments/assets/5d9fa80a-cb4a-4822-83f2-838998526a10" />
+
 
 
 
