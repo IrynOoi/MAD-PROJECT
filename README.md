@@ -7,7 +7,8 @@
 
 ## Summary of food product (predict one item)
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/f19e44d3-c604-4c1a-b377-86c8d462ca49" />
+<img width="260" height="529" alt="image" src="https://github.com/user-attachments/assets/ae9f8e62-6975-4577-920a-9987a3854ace" />
+
 
 
 
