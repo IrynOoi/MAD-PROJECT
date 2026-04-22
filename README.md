@@ -96,7 +96,8 @@ PART 2:
 
 ## EXPORT IN CSV
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/01bb7a1a-6f35-4270-b79f-8b18fc6ae57c" />
+<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/bf6265d6-c15a-479f-b2b6-37d731136d3e" />
+
 
 ## AFTER CLICK THE TOP RIGHT BUTTON AT PREDICTION HISTORY PAGE
 
