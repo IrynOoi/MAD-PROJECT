@@ -15,22 +15,22 @@
 
 PART 1:
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/aa9e6212-cacb-4242-ac32-a66694a15067" />
+<img width="279" height="576" alt="image" src="https://github.com/user-attachments/assets/d4116580-81bc-461f-8dcd-dcad516f490f" />
 
 
 PART 2:
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/2eab8740-e1de-4430-8982-1d7739acc0bd" />
+<img width="278" height="574" alt="image" src="https://github.com/user-attachments/assets/e5da8823-d225-4f43-9ecb-3ed45163156f" />
+
 
 
 PART 3:
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/2a887316-1b64-4327-a060-b635f1a85c31" />
+<img width="274" height="564" alt="image" src="https://github.com/user-attachments/assets/b97cb9b5-cbf4-4d00-a71a-4c25dadc67d0" />
 
 
-PART 4:
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/b76ee72a-e243-4ea3-ae16-acf6a6274ed4" />
+
 
 
 
@@ -41,7 +41,8 @@ PART 4:
 ## Food Analysis Detail
 PART 1:
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/0103d38b-63e5-428c-8c6c-f5ccfd9aa585" />
+<img width="275" height="563" alt="image" src="https://github.com/user-attachments/assets/3a2e39ea-0a2b-4ae7-b7ed-403f3736ea29" />
+
 
 
 
@@ -49,7 +50,7 @@ PART 1:
 
 PART 2:
 
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/6d60e85c-b619-4459-8aac-956672048df9" />
+<img width="276" height="567" alt="image" src="https://github.com/user-attachments/assets/74d65767-408a-4391-8d5e-935ee1c67f2c" />
 
 
 
@@ -63,23 +64,7 @@ PART 2:
 
 # TABLE FOR PREDICTION QUALITY 
 
-PART 1:
-
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/821a6bf9-daf5-411a-afa3-2d4c98da383d" />
-
-
-
-
-PART 2:
-
-
-
-<img width="572" height="1280" alt="image" src="https://github.com/user-attachments/assets/32372ecb-3223-456f-b5f0-03c0a175b606" />
-
-
-
-
-
+<img width="841" height="524" alt="image" src="https://github.com/user-attachments/assets/bb7f87a8-364b-489f-8d4c-8cb4fe82262f" />
 
 
 
@@ -87,61 +72,20 @@ PART 2:
 
 # TABLE FOR AND SAFETY METRIC
 
-PART 1:
 
-
-
-<img width="572" height="720" alt="image" src="https://github.com/user-attachments/assets/f7a5e427-0768-49ff-a770-0afeb7fbc1d1" />
-
-
-
-
-
-
-
-
-PART 2:
-
-<img width="572" height="712" alt="image" src="https://github.com/user-attachments/assets/6549818c-6861-492b-a9b0-d13d6ec879ac" />
-
-
-
-
-
-
+<img width="859" height="541" alt="image" src="https://github.com/user-attachments/assets/ce37838d-b598-4528-9dab-460b9c94c145" />
 
 
 
 
 # TABLE FOR ON DEVICE EFFICIENTCY
 
-PART 1:
+
+<img width="807" height="432" alt="image" src="https://github.com/user-attachments/assets/da2ce467-bf6d-4cf4-b4c2-f6afc86ebd46" />
 
 
 
-<img width="720" height="860" alt="image" src="https://github.com/user-attachments/assets/74e961b1-e29f-4e5b-bd90-074c0cc4304b" />
-
-
-
-
-
-
-PART 2:
-
-<img width="572" height="777" alt="image" src="https://github.com/user-attachments/assets/2aba2cd8-bdc2-4a07-b8b6-37646048605a" />
-
-
-
-
-
-
-
-PART 3:
-
-
-<img width="720" height="1071" alt="image" src="https://github.com/user-attachments/assets/e1c33679-d2e9-4fa0-998a-7937d8fb10de" />
-
-
+<img width="404" height="468" alt="image" src="https://github.com/user-attachments/assets/6629cc67-d617-4680-afef-2fa7f739ff7e" />
 
 
 
