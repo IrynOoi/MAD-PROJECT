@@ -110,7 +110,8 @@ PART 2:
 
 ## THE CONTENT INSIDE CSV FOR PERFORMANCE DASHBOARD
 
-<img width="1089" height="684" alt="image" src="https://github.com/user-attachments/assets/5e00b98e-1417-40c9-9924-28be86639d76" />
+<img width="898" height="697" alt="image" src="https://github.com/user-attachments/assets/0f52d380-a8fb-4d6c-a5cd-3770a41c9382" />
+
 
 
 ## THE CONTENT INSIDE CSV FOR PREDICT HISTORY PAGE
