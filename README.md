@@ -1,3 +1,7 @@
+## Introduction
+
+the Food Allergen Predictor is a mobile application developed for Android devices to evaluate and benchmark the performance of various artificial intelligence models in predicting food allergens. Designed as a comprehensive testing environment, the app allows users to select specific AI models and datasets to perform individual or batch predictions on food items based on their ingredient lists. Beyond simple prediction, the core functionality revolves around detailed performance analysis, offering dashboards that track prediction quality metrics like precision, recall, and F1-scores. It also rigorously evaluates model reliability through safety metrics—such as hallucination and over-prediction rates—and measures on-device efficiency by monitoring latency, token throughput, and memory usage during execution. To support ongoing research and documentation, the application maintains a detailed history of all predictions and provides tools to export these benchmark reports and historical records as CSV files for external analysi
+
 
 ## UI PREDICTOR LOOK LIKE:
 
