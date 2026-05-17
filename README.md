@@ -1,7 +1,56 @@
-## Introduction On Food Allergen Predictor app
+# 🧠🍽️ Food Allergen Predictor & AI Benchmarking App
 
-the Food Allergen Predictor is a mobile application developed for Android devices to evaluate and benchmark the performance of various artificial intelligence models in predicting food allergens. Designed as a comprehensive testing environment, the app allows users to select specific AI models and datasets to perform individual or batch predictions on food items based on their ingredient lists. Beyond simple prediction, the core functionality revolves around detailed performance analysis, offering dashboards that track prediction quality metrics like precision, recall, and F1-scores. It also rigorously evaluates model reliability through safety metrics—such as hallucination and over-prediction rates—and measures on-device efficiency by monitoring latency, token throughput, and memory usage during execution. To support ongoing research and documentation, the application maintains a detailed history of all predictions and provides tools to export these benchmark reports and historical records as CSV files for external analysis
+## 📌 Overview
+The **Food Allergen Predictor** is an Android application built using Kotlin and Android Studio, integrated with Firebase for data storage. The app predicts allergens from food ingredients and serves as a **mobile AI benchmarking platform** to evaluate different models directly on-device.
 
+---
+
+## 🎯 Objectives
+- Perform allergen prediction using multiple AI models
+- Store prediction history and results in Firebase
+- Evaluate model performance (quality, safety, efficiency)
+- Export benchmarking results for reporting and analysis
+
+---
+
+## ⚙️ Features
+
+### 🧠 Allergen Prediction
+- Supports:
+  - Single-item prediction
+  - Dataset-based prediction
+  - Full dataset evaluation
+- Runs inference on-device using multiple AI models
+
+### 📊 Benchmarking Metrics
+- Precision
+- Recall
+- F1 Score
+- Hallucination Rate
+- Over-prediction Rate
+- Latency
+- Memory Usage
+
+### 📜 History & Analytics
+- Stores prediction history in Firebase
+- Displays benchmarking results in dashboard view
+- Tracks model performance over time
+
+### 📤 Export
+- Export results as CSV for reporting and analysis
+
+---
+
+## 🤖 Supported AI Models
+- `qwen2.5-1.5b-instruct-q4_k_m.gguf`
+- `qwen2.5-3b-instruct-q4_k_m.gguf`
+- `Llama-3.2-3B-Instruct-Q4_K_M.gguf`
+- `Llama-3.2-1B-Instruct-Q4_K_M.gguf`
+- `Phi-3.5-mini-instruct-Q4_K_M.gguf`
+- `Phi-3-mini-4k-instruct-q4.gguf`
+- `Vikhr-Gemma-2B-instruct-Q4_K_M.gguf`
+
+---
 
 ## UI PREDICTOR LOOK LIKE:
 
